@@ -31,5 +31,14 @@ services:
       - POSTGRES_USER=devuser
       - POSTGRES_PASSWORD=changeme
 
+  adminer:
+    container_name: recipe_api_adminer
+    image: adminer
+    depends_on:
+      - db
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+
 volumes:
   dev-db-data:
