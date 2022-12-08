@@ -31,12 +31,12 @@ from recipe import serializers
             OpenApiParameter(
                 "tags",
                 OpenApiTypes.STR,
-                description="Comma seperated list of tags IDs to filter",
+                description="Comma seperated list of tag IDs to filter",
             ),
             OpenApiParameter(
                 "ingredients",
                 OpenApiTypes.STR,
-                description="Comma seperated list of ingredients IDs to filter",
+                description="Comma seperated list of ingredient IDs to filter",
             ),
         ]
     )
